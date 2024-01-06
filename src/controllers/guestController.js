@@ -8,6 +8,6 @@ exports.addGuest = (req, res) => {
       return res.status(500).json({ error: err.message });
     }
 
-    res.json({ message: 'Data tamu berhasil ditambahkan.' });
+    res.json({ message: 'Data Guest berhasil ditambahkan.' });
   });
 };

@@ -2,8 +2,8 @@ const sqlite3 = require('sqlite3').verbose();
 
 const db = new sqlite3.Database('../database.db');
 
-const createTamuTable = `
-  CREATE TABLE IF NOT EXISTS tamu (
+const createGuestTable = `
+  CREATE TABLE IF NOT EXISTS guest (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     nama TEXT,
     alamat TEXT,
@@ -12,11 +12,11 @@ const createTamuTable = `
   );
 `;
 
-db.exec(createTamuTable, (err) => {
+db.exec(createGuestTable, (err) => {
   if (err) {
     console.error('Error creating table:', err.message);
   } else {
-    console.log('Table "tamu" created successfully.');
+    console.log('Table "guest" created successfully.');
   }
 });
 
