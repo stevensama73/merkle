@@ -111,4 +111,4 @@ npm run start
     "error": "Unauthorized - Invalid token"
   }
 
-Note: Buat satu file .env di root folder, kemudian isi SECRET_KEY=<isinya bebas>
+Note: Buat satu file .env di root folder, kemudian isi SECRET_KEY=bebas
