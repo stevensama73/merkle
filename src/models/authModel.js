@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const secretKey = 'fkd740gza5n80ijt0s96qhn0mbrgwzz0';
+const secretKey = process.env.SECRET_KEY;
 
 class Auth {
   static generateToken(username) {
